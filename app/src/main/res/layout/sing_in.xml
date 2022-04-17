@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="90">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelTipoDeConta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="80dp"
+                android:text="Tipo de Conta"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioButton
+                android:id="@+id/tipoUsuarioRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Doador"
+                app:layout_constraintStart_toStartOf="@+id/labelTipoDeConta"
+                app:layout_constraintTop_toBottomOf="@+id/labelTipoDeConta" />
+
+            <RadioButton
+                android:id="@+id/tipoOngRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:text="ONG"
+                app:layout_constraintStart_toStartOf="@+id/tipoUsuarioRadioButton"
+                app:layout_constraintTop_toBottomOf="@+id/tipoUsuarioRadioButton" />
+
+            <TextView
+                android:id="@+id/labelNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Nome Completo/Nome da Instituição"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tipoOngRadioButton" />
+
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Insira seu Nome/Nome da Instituição"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelNome" />
+
+            <TextView
+                android:id="@+id/labelCpfCnpj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:text="CPF/CNPJ"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+            <EditText
+                android:id="@+id/signInEditCpfCnpj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Insira o CPF/CNPJ da Conta"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelCpfCnpj" />
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Email"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Insira o Email da Conta"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/labelDataDeNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Data de Nascimento"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editDataDeNascimeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="dd/mm/aaaa"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/labelSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Senha"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Insira a Senha da Conta"
+                android:inputType="textPassword"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/labelConfirmarSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Confirmar a Senha"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editConfirmarSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Repita a Senha da Conta"
+                android:inputType="textPassword"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/increverseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:alpha="0.25"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp"
+        android:text="Inscrever-se"
+        app:cornerRadius="32dp"/>
+
+
+</LinearLayout>
