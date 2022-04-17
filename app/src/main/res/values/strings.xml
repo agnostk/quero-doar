@@ -4,4 +4,6 @@
     <string name="title_notifications">Notificações</string>
     <string name="title_favorite">Favoritos</string>
     <string name="tittle_donation">Doações</string>
+    <string name="notification_list_item_content_default">A ONG que você apoia “Lar dos gatos” adicionou um novo evento: Feira de Adoção em 04/07.</string>
+    <string name="notification_list_item_datereceived_default">00:00 00/00/0000</string>
 </resources>
