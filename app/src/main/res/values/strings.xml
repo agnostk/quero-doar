@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Quero Doar</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_favorite">Favorites</string>
-    <string name="tittle_donation">Donations</string>
+    <string name="title_home">Início</string>
+    <string name="title_notifications">Notificações</string>
+    <string name="title_favorite">Favoritos</string>
+    <string name="tittle_donation">Doações</string>
 </resources>
