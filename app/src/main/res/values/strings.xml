@@ -4,4 +4,10 @@
     <string name="title_notifications">Notificações</string>
     <string name="title_favorite">Favoritos</string>
     <string name="tittle_donation">Doações</string>
+    <string name="ong_image_description">ONG Image</string>
+    <string name="ong_name">ONG Amapatas</string>
+    <string name="ong_value">Valor: R$ 10,00 por mês</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="em_alta">Em Alta</string>
 </resources>
