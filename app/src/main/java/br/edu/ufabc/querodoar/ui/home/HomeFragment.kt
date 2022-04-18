@@ -4,9 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
+import br.edu.ufabc.querodoar.OngListFragment
 import br.edu.ufabc.querodoar.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -28,10 +29,16 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        val ongEmAltaContainer = binding.ongEmAltaFragmentContainer
+        childFragmentManager.commit {
+            replace(ongEmAltaContainer.id, OngListFragment())
         }
+
+        val ongRecenteContainer = binding.ongRecenteFragmentContainer
+        childFragmentManager.commit {
+            replace(ongRecenteContainer.id, OngListFragment())
+        }
+
         return root
     }
 

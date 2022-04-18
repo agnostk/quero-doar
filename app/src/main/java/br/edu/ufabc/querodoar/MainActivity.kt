@@ -1,7 +1,7 @@
 package br.edu.ufabc.querodoar
 
 import android.os.Bundle
-import androidx.activity.viewModels
+import android.widget.Toolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
@@ -23,9 +23,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val toolbar : androidx.appcompat.widget.Toolbar = findViewById(R.id.my_tool_bar)
+        setSupportActionBar(toolbar)
 
         val navView: BottomNavigationView = binding.navView
 
