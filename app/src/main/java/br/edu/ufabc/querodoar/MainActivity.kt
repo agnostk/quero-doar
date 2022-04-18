@@ -2,6 +2,7 @@ package br.edu.ufabc.querodoar
 
 import android.os.Bundle
 import android.widget.Toolbar
+import androidx.activity.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
