@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/drawable/outline_favorite_24.xml" value="0.14" />
+        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_dashboard.xml" value="0.14722222222222223" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_donation.xml" value="0.14722222222222223" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_home.xml" value="0.14722222222222223" />
+        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_notification_item.xml" value="0.16" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_notifications.xml" value="0.14722222222222223" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/notification_item.xml" value="0.75" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />

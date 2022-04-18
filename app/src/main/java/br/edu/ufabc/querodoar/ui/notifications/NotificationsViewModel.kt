@@ -1,13 +1,21 @@
 package br.edu.ufabc.querodoar.ui.notifications
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import br.edu.ufabc.querodoar.App
 
-class NotificationsViewModel : ViewModel() {
+class NotificationsViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+    private val repository = (application as App).repository
+
+    val clickedItemId by lazy {
+        MutableLiveData<Long?>()
     }
-    val text: LiveData<String> = _text
+
+    fun getNoficationsById(id: Long) = repository.getNotificationById(id)
+
+    fun all() = repository.getAllNotifications()
+
 }
