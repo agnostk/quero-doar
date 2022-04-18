@@ -8,14 +8,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.edu.ufabc.querodoar.databinding.FragmentOngListBinding
 import br.edu.ufabc.querodoar.databinding.OngListItemBinding
+import br.edu.ufabc.querodoar.model.ONG
 
 class OngListFragment : Fragment() {
     private lateinit var binding: FragmentOngListBinding
-
-    companion object {
-        const val itemClickedKey = "itemClickedKey"
-        const val itemClickedPosition = "itemClickedPosition"
-    }
 
     private inner class NoteAdapter(val ongs: List<ONG>) :
         RecyclerView.Adapter<NoteAdapter.NoteHolder>() {

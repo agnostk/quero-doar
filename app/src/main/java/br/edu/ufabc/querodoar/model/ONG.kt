@@ -1,4 +1,4 @@
-package br.edu.ufabc.querodoar
+package br.edu.ufabc.querodoar.model
 
 data class ONG (
     var name: String,

@@ -29,10 +29,14 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val ongListContainer = binding.ongListFragmentContainer
-
+        val ongEmAltaContainer = binding.ongEmAltaFragmentContainer
         childFragmentManager.commit {
-            replace(ongListContainer.id, OngListFragment())
+            replace(ongEmAltaContainer.id, OngListFragment())
+        }
+
+        val ongRecenteContainer = binding.ongRecenteFragmentContainer
+        childFragmentManager.commit {
+            replace(ongRecenteContainer.id, OngListFragment())
         }
 
         return root
