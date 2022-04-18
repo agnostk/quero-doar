@@ -7,6 +7,4 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = (application as App).repository
 
-    fun allNotifications() = repository.getAll()
-
 }
