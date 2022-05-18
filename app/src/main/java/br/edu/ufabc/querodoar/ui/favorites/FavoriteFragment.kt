@@ -6,7 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
+import br.edu.ufabc.querodoar.OngListFragment
+import br.edu.ufabc.querodoar.OngListVertical
 import br.edu.ufabc.querodoar.databinding.FragmentFavoriteBinding
 
 class FavoriteFragment : Fragment() {
@@ -28,10 +31,15 @@ class FavoriteFragment : Fragment() {
         _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textFavorite
-        favoriteViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        val ongFavoritosContainer = binding.favoritosFragmentContainer
+        childFragmentManager.commit {
+            replace(ongFavoritosContainer.id, OngListVertical())
         }
+
+//        val textView: TextView = binding.textFavorite
+//        favoriteViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 
