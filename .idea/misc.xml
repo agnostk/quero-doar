@@ -3,12 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/activity_cadastre_se.xml" value="0.21557971014492755" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/activity_login.xml" value="0.17831813576494426" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/activity_main.xml" value="0.18958333333333333" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_donation.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_favorite.xml" value="0.13980582524271845" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_home.xml" value="0.18958333333333333" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_notification_item.xml" value="0.18958333333333333" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_notifications.xml" value="0.18958333333333333" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_ong.xml" value="0.1490036231884058" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_ong_list.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_ong_list_vertical.xml" value="0.1490036231884058" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/fragment_sf.xml" value="0.1490036231884058" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/notification_item.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/quero-doar/app/src/main/res/layout/sing_in.xml" value="0.21557971014492755" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/drawable/outline_favorite_24.xml" value="0.14" />
-        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_dashboard.xml" value="0.14722222222222223" />
-        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_donation.xml" value="0.14722222222222223" />
-        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_home.xml" value="0.14722222222222223" />
-        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/drawable/stacked_car.xml" value="0.1" />
+        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_dashboard.xml" value="0.14722222222222223" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_donation.xml" value="0.33" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_favorite.xml" value="0.19375" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_home.xml" value="0.14583333333333334" />
@@ -16,15 +27,15 @@
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_notifications.xml" value="0.19375" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_ong_list.xml" value="0.19375" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/fragment_ong_list_item.xml" value="0.19375" />
+        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/notification_item.xml" value="0.75" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/ong_list_item.xml" value="0.21" />
+        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/mipmap-anydpi-v26/ic_ong.xml" value="0.1" />
         <entry key="..\:/dev/padm/quero-doar/app/src/main/res/mipmap-anydpi-v26/ic_ong_round.xml" value="0.1" />
-        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/layout/notification_item.xml" value="0.75" />
-        <entry key="..\:/dev/padm/quero-doar/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

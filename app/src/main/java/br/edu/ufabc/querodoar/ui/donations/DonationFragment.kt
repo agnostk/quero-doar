@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
+import br.edu.ufabc.querodoar.OngListFragment
 import br.edu.ufabc.querodoar.databinding.FragmentDonationBinding
 
 class DonationFragment : Fragment() {
@@ -28,9 +30,15 @@ class DonationFragment : Fragment() {
         _binding = FragmentDonationBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDonation
-        donationViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+
+        val ongAssinadasContainer = binding.ongAssinadasFragmentContainer
+        childFragmentManager.commit {
+            replace(ongAssinadasContainer.id, OngListFragment())
+        }
+
+        val ongHistoricoContainer = binding.ongHistoricoFragmentContainer
+        childFragmentManager.commit {
+            replace(ongHistoricoContainer.id, OngListFragment())
         }
         return root
     }
